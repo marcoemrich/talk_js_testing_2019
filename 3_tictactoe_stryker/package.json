@@ -1,0 +1,27 @@
+{
+  "name": "example_stryker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rm -r .stryker-tmp; jest ./specs/tic_tac_toe.spec.js",
+    "stryker": "stryker run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ramda": "^0.25.42",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
+    "ramda": "^0.26.0"
+  },
+  "devDependencies": {
+    "stryker": "^0.33.1",
+    "stryker-api": "^0.22.0",
+    "stryker-html-reporter": "^0.16.9",
+    "stryker-javascript-mutator": "^0.12.1",
+    "stryker-jest-runner": "^1.2.9"
+  }
+}
